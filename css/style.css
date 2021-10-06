@@ -1,0 +1,384 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
+/*common start*/
+*{
+    margin:0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    outline: 0;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+h1,h2,h3,h4,h5,h6{
+    font-weight: 800;
+}
+.container{
+    width: 1170px;
+    margin: 0 auto;
+} 
+.row{   
+    display: -webkit-box;   
+    display: -ms-flexbox;   
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+}
+.section_title{
+    text-align: center;
+} 
+.section_title h3{
+    font-size: 46px;
+    line-height: auto;
+    color: #02918c;
+    text-transform: uppercase;
+    padding: 8px 0;  
+}
+.section_title span{
+    padding: 18px 0;  
+}
+.section_title p{
+    padding: 18px 167px;
+    font-size: 16px;
+    line-height: 41px;  
+    color:#7e8287; 
+}
+.section_title p span{
+    font-weight: 800;
+}
+/*common end*/
+/*header section start*/
+#header .container .row{
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+#header{
+    background-color: #02918c;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9;
+}
+.stickyNav{
+    animation: stickyNav 0.7s;
+}
+@keyframes stickyNav {
+    from{
+        top:-20px;
+    }
+    to{
+        top: 0;
+    }
+}
+.menu ul{
+    list-style-type: none;
+}
+.menu ul li{
+    display: inline-block;   
+}
+.menu ul li a{
+    display: inline-block;
+    font-size: 12px;
+    line-height: 1.5;
+    color:white;
+    font-weight: 800; 
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 21px 25px;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.logo{
+    width: 30%;
+}
+.menu{
+    width: 70%;
+    text-align: right;
+}
+img{
+    display: block;
+}
+.menu ul li:hover a{
+    color: yellow;
+}
+/*header section end*/
+#banner{
+    background-image: url(../img/banner.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 730px;
+    position: relative;
+    z-index: 1;
+}
+#banner:before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.34);
+    z-index: -1;
+}
+#banner .container,
+#banner .row{
+    height: 100%;
+}
+#banner .container .row{
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack:center;
+        -ms-flex-pack:center;
+            justify-content:center;
+}
+.banner_content{
+    text-align: center;
+    color: #ffffff;
+}
+.banner_content p{
+    font-size: 30px;
+    line-height: 25px;
+}
+#banner .banner_content h1{
+    font-size: 68px;
+    line-height: 75px;
+    letter-spacing: 30px;
+    text-transform: uppercase;
+}
+.banner_content p:nth-child(3){
+    font-size: 18px;
+    line-height: 33px;
+}
+.banner_content img{
+    margin:49px auto;
+}
+.banner_content a{
+    display: inline-block;
+    text-decoration: none;
+    color: #0b1016;
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: 800;
+    padding: 9px 57px;
+    background-color: #cfc91d;
+}
+/*header section end*/
+/* about section strat */
+.about_me_wrapper .about_me_item{
+    width: 25%;
+    text-align: center;
+    border-right: 1px solid #d9dbdb;
+    margin: 40px 0;
+}
+.about_me_wrapper .about_me_item img{
+   margin: 0 auto;
+   padding: 14px 0;
+}
+.about_me_wrapper .about_me_item  h4{
+    font-size: 16px;
+    line-height: 23px;
+    color: #7e8287;
+    padding: 14px 0;
+}
+.about_me_wrapper .about_me_item p{
+    font-size: 11px;
+    line-height: 21px;
+    color: #7e8287;
+    padding: 14px 65px;
+}
+.about_me_wrapper .about_me_item:last-child{
+    border-right:none;
+}
+/*about  section end */
+/* services section strat */
+#service{
+    background:#f0f0e8 url(../img/services-banner.jpg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: cover right;
+    position: relative;
+}
+#service:before{
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    right: 0;
+    background-color: rgba(240,240,232,.70)
+}
+#service .section_title h3{
+    padding-top: 74px;
+}
+#service .service_wrapper{
+    width: 50%;
+}
+#service .section_title{
+    text-align: left;
+}
+#service .section_title p{
+    padding: initial;
+}
+#service .service_wrapper .section_title{
+    padding-bottom:30px;
+}
+#service .service_item img{
+    padding: 9px 0;
+}
+#service .service_item h4{
+    font-size: 16px;
+    line-height: 23px;
+    color:#7e8287;
+    padding: 12px 0;
+}
+#service .service_item p{
+    font-size: 11px;
+    line-height: 21px;
+    padding-top:12px;
+    padding-bottom: 12px;
+    padding-right:100px;
+    color: #7e8287;
+}
+#service .service_item{
+    width: 50%;
+}
+#service .row{
+    padding-bottom: 74px;
+}
+/* services section end */
+/* mywork section strat */
+#mywork .section_title h3{
+    padding-top: 98px;
+}
+#mywork .section_title p{
+    padding: 15px 246px 76px 246px;
+}
+.mywork_item_wrapper .mywork_item{
+ width: 25%;
+}
+.mywork_item_wrapper .mywork_item img{
+    width: 100%;
+}
+.mywork_item_wrapper .mywork_item{
+    position: relative;
+}
+.mywork_item_wrapper .mywork_item .mywork_overlay{
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    bottom: 20px;
+    left: 30px;
+    background-color: rgba(2,145,140,.85);
+    color: #ffffff;
+    text-align: center;
+    -webkit-transform: scale(0);
+        -ms-transform: scale(0);
+            transform: scale(0);
+    -webkit-transition: all linear 0.5s;
+    -o-transition: all linear 0.5s;
+    transition: all linear 0.5s;
+}
+.mywork_item_wrapper .mywork_item:hover .mywork_overlay{
+    -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+            transform: scale(1);
+} 
+.mywork_item_wrapper .mywork_item .mywork_overlay h4{
+    padding-top: 58px;
+    padding-right: 72px;
+    padding-bottom: 9px;
+    padding-left: 72px;
+    line-height: 23px;
+    font-size: 16px;
+}
+.mywork_item_wrapper .mywork_item .mywork_overlay p{
+    font-size: 13px;
+    line-height: 23px;
+    padding: 9px 42px;
+}
+/* mywork section end */
+/* contact  section strat */
+#aboutme .section_title h3{
+    padding-top: 100px;
+    padding-bottom: 15px;
+}
+#aboutme .section_title p{
+    padding:15px 242px 68px 242px;
+}
+#aboutme .contact_form{
+    background-color: #0b0b0b;
+}
+#aboutme .contact_form input,
+#aboutme .contact_form textarea{
+    display: block;
+    width: 75%;
+    margin: 0 auto;
+    text-align: center;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #898989;
+    padding-top: 68px;
+    color: #7e8287;
+    font-size: 16px;
+    line-height: 41px;
+}
+#aboutme .contact_form input:nth-child(1),
+#aboutme .contact_form input:nth-child(2){
+    width: 50%;
+}
+#aboutme .contact_form textarea{
+    font-family: 'Open Sans', sans-serif;
+    resize: none;
+}
+#aboutme .contact_form button{
+    display: block;
+    margin: 66px auto 0 auto;
+    padding: 14px 76px;
+    background-color: #cfc91d;
+    font-size: 14px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: #0b1016;
+    font-weight: 800;  
+}
+#aboutme .contact_form{
+    padding-bottom: 70px;
+}
+/* contact  section end */
+/* footer section strat */
+#footer{
+    background-color: #000000;
+    color: #7e8287;
+    font-size: 12px;
+    line-height: 41px;
+    text-align: center;
+    padding: 17px 0;
+}
+#backtotop{
+    background-color: #02918c;
+    border: 1px solid #02918c;
+    position: fixed;
+    right: 55px;
+    bottom: 60px;
+    font-size: 50px;
+    display: none;
+    cursor: pointer;
+}
+#preloder{
+    position: fixed;
+    z-index: 9999999;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+}
+/* footer section end */
